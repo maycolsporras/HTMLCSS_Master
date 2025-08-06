@@ -1,2 +1,47 @@
-<h1>Hola</h1>
-<h2>Esto es una prueba</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Este se ve en el tab de internet-->
+    <title>HTMLCSSMaster</title>
+    <!--Link se usa para traer files externos, como el css, font y icons, que ayudan esteticamente al html-->
+    <link rel="stylesheet" href="./styles.css">
+    <!--rel es la relacion queexite entre el archivo externo y el html-->
+    <!--Hay otros como lo es el preconnect que es para ayudar a la carga del SEO-->
+    <!--href es el link del archivo, en este caso es ./ porque se encuentra en la carpeta donde esta el index-->
+</head>
+<body>
+    <!--El main siempre abarca lo mas importante del codigo-->
+    <main>
+    <!--Dividir en secciones el codigo es importante para el load del SEO (Search Engine Optimization)-->
+    <section>
+        <h1>Hola Mi nombre es Maycol Porras</h1>
+        <h2>Conoce más sobre mi</h2>
+        <p>Soy estudiante de desarrollo en software, interesado en full web development</p>
+        <!--Esto es importante para almacenar imagenes-->
+        <!--Siempre tartar de tener un alt en las imagenes para una mayor accesibilidad-->
+        <figure>
+            <img src="./Foto Maycol.jpeg" alt="Foto mia" height="100px">
+            <figcaption>Esta es una foto mia</figcaption>
+        </figure>
+        <h3>Proposito del file</h3>
+        <p>Este archivo tiene el proposito de realizar cambios diarios mienteas masterizo habilidades en HTML y CSS</p>
+        <p>Cada cambio es importante, dado a que este puede cambiar totalmente este file </p>
+        <h3>Sources de aprendizaje</h3>
+        <ol>
+            <!--El target sirve para saber donde se abrira el link, en otra pestanha, ahi mismo, etc...-->
+            <li><a href="https://www.udemy.com/personal/home/" target="_blank">Udemy</a></li>
+            <li><a href="https://www.freecodecamp.org/learn/full-stack-developer/">freeCodeCamp</a></li>
+            <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+        </ol>
+        <!--Se pueden enfatizar palabras como es el caso de abajo del strong, o se puede usar em para italic-->
+        <p>Me <strong>conoces</strong>?</p>
+        <!--Existen diferentes tipos de input-->
+        <!--El input sirve para pedir informacion al user que esta en la pagina-->
+        <!--Existen atributos que no necesitan un value, como lo es el checked,disabled,redonly,required-->
+        <input type="checkbox" checked>
+    </main>
+    </section>
+</body>
+</html>
