@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML</title>
+</head>
+<body>
+    <!--La semantica se refiere al significado que tenga un elemento o las palabras, por ejemplo el p se refiere a un parrafo-->
+    <!--Una pagina con buena semantica ayuda al SEO-->
+    <!--
+        The header element for defining the header of the document, or section.
+        The navigation section element, nav, for sections with navigation links.
+        The section element for grouping related information.
+        The figure element for illustrations and diagrams.
+    -->
+    
+    <p>There is a certain <i lang="fr">je ne sais quoi</i> in the air.</p>
+    <!--Esto es un ejemplod e como usar el tag i, que se usa para definir otros lenguajes, moods y demas-->
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+    </dl>
+    <!--Esto es un ejemplo de como usar el tag dl, que se usa para definir una lista de definiciones-->
+    <!--Es como un indice-->
+
+    <blockquote cite="https://www.freecodecamp.org/news/learn-to-code-book/">
+        "Can you imagine what it would be like to be a successful developer? To have built software systems that people rely upon?"
+    </blockquote>
+    <!--quotes se hacen de esta manera-->
+
+    <p><abbr title="HyperText Markup Language">HTML</abbr> is the foundation of the web.</p>
+    <!--Esto es para una abreviacion o acronimo-->
+
+    <address>
+        <h2 id="companyName">Company Name</h2>
+        <p>
+            1234 Elm Street<br />
+            Springfield, IL 62701<br />
+            United States
+        </p>
+        <p>Phone: <a href="tel:+15555555555">+1 (555) 555-5555</a></p>
+        <p>Email: <a href="mailto:contact@company.com">contact@company.com</a></p>
+    </address>
+    <!--address se usa para el momento del contac info de la pagina-->
+    <!--El mail to: y tel: es para que se haga un link que ayude a llamar o mandar un correo-->
+
+    <p>
+        The graduation will be on <time datetime="2024-06-15T15:00">June 15</time>
+    </p>
+    <!--El atributo datetime es para definir la fecha y hora exacta, y el contenido es para mostrarlo de una manera mas amigable-->
+    <!--El time element es para definir una fecha y hora, y el datetime es para definir la fecha y hora exacta-->
+
+    <p>2<sup>2</sup> (2 squared) is 4.</p>
+    <!--Usado para poner cuadrados-->
+    <p>CO<sub>2</sub></p>
+    <!--Usado para poner subindices, como en la quimica-->
+
+    <p>
+        You can use the unarticulated annotation element to highlight
+        <u>inccccort</u> <u>spling</u> <u>issses</u>.
+    </p>
+    <!--El u element es para subrayar texto, pero no se recomienda su uso ya que no es semantico, se recomienda usar CSS para esto-->
+
+    <p><s>Tomorrow's hike will be meeting at noon.</s></p>
+    <!--El s element es para marcar texto que ya no es relevante, como un error o algo que ya no se va a hacer-->
+
+    <ruby> 明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp> </ruby>
+    <!--El ruby element es para definir anotaciones de pronunciacion, como en el japones-->
+
+    <p><a href="#companyName">company name</a></p>
+    <!--En los anchor se puede poner un id de cualquier elemento para que te guie a el-->
+</body>
+</html>
