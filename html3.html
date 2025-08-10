@@ -5,6 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms and tables</title>
 <body>
-    
+    <!--Este es el estudio de forms y tables en HTML-->
+    <h1>Forms y tables en HTML</h1>
+    <form action="url-goes-here">
+        <!-- input elements go here -->
+        <!--Action se refiere a donde se va a enviar la data una vez se obtenga la info-->
+    </form>
+    <form action="">
+        <label for="email"> Email Address: </label>
+        <input type="email" id="email" placeholder="Ex. example@email.com" />
+    </form>
+        <!--Label se utiliza para que el input no este solamente existiendo-->
+        <!--Input type email es para que se valide que sea un email, y el placeholder es para que se vea un ejemplo de lo que se espera-->
+        <!--cuando se tiene un for tan explicito en label, es necesario el id en el input que sean iguales-->
+    <br>
+    <form action="">
+        <fieldset>
+            <legend>Email information</legend>
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" size="10"/>
+            <button type="reset">Reset form</button>
+            <button type="submit">Submit form</button>
+        </fieldset>
+        <!--radio buttons son botones que permiten seleccionar una sola opcion de un grupo-->
+        <!--deben tener el mismo name para que sean seleccionados una unica vez o uno o el otro-->
+        <fieldset>
+            <legend>seleccion uncia</legend>
+            <input type="radio" id="yes" name="first-time">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="first-time">
+            <label for="no">No</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Seleccion multiple</legend>
+            <label for="pizza">Pizza</label>
+            <input checked type="checkbox" id="pizza" name="food" value="pizza">
+            <label for="burger">Burger</label>
+            <input type="checkbox" id="burger" name="food" value="burger">
+        </fieldset>
+        <!--checkboxes son botones que permiten seleccionar multiples opciones de un grupo-->
+        <!--El value es para definir el valor que se va a enviar al servidor-->
+        <!--El checked es para que el checkbox este seleccionado por defecto-->
+        <fieldset>
+            <legend>Dropdown</legend>
+            <label for="city">Choose a City: </label>
+            <select id="city" name="city">
+                <option selected value="new-york">New York</option>
+                <option value="los-angeles">Los Angeles</option>
+                <option value="chicago">Chicago</option>
+                <option value="miami">Miami</option>
+            </select>
+        </fieldset>
+        <!--select es para crear un dropdown, y option es para definir las opciones del dropdown-->
+        <!--El selected es para que la opcion este seleccionada por defecto-->
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        <!--Textarea es para crear un campo de texto mas grande, y rows y cols son para definir el tamaño del campo-->
+        <!--El id y el name deben ser iguales para que el label funcione correctamente-->
+        <!--El label es para que el input tenga un nombre y sea mas facil de entender-->
+        <!--rows y cols definen el tamano del area-->
+
+
+
+    </form>
+    <!--Aqui se anade la funcion del boton donde lo que decide que va a  hacer el boton es basicamente su tipo-->
+    <!--El button type reset es para que se limpie el form, y el submit es para que se envie la data-->
+    <!--Existe algo llamado method en forms-->
+    <!--El method puede ser get o post, el get es para que la data se envie por la url, y el post es para que la data no se vea en la url-->
+    <!--se pueden agrupar los inputs que se deseen en fieldsets-->
+    <!--legend se usa para mostrar de lo que se trata el field-->
+    <!--atributo name se usa para identificar los datos una vez enviados al servidor-->
+    <!--El atributo size se usa para definir el ancho del input, en caracteres-->
+    <!--Cuando son type number se puede poner un max y un min con max="" y min=""-->
+    <h2>Validaciones</h2>
+    <form action="">
+        <label for="email">Email Address (Required field):</label>
+        <input
+            required
+            type="email"
+            name="email"
+            id="email"
+            minlength="4"
+            maxlength="64"
+        />
+        <button type="submit">Submit Form</button>
+    </form>
+    <!--Aqui se hace la validacion con el required, min y max length-->
+    <br>
+    <!--In HTML, form controls, like inputs, can be in different stages or conditions like a focused state, readonly state, or disabled state.-->
+    <input disabled type="email" name="email" id="email" />
+    <!--El disabled es para que el input no se pueda editar, pero si se puede ver-->
+    <!--El readonly es para que el input no se pueda editar, pero si se puede copiar-->
+    <!--El focused es para que el input se seleccione automaticamente al cargar la pagina-->
+    <input
+        readonly
+        type="email"
+        name="email"
+        id="email"
+        value="example@email.com"
+    />
 </body>
 </html>
