@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accesibility</title>
 </head>
+
 <body>
+    <table>
+        <caption>Our Pets</caption>
+        <thead>
+            <tr>
+                <!-- Now they have scope -->
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Nora</th>
+                <td>5</td>
+                <td>Dog</td>
+            </tr>
+            <tr>
+                <th scope="row">Gino</th>
+                <td>2</td>
+                <td>Cat</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- The table caption provides context for the table -->
+    <!--scope attribute is used to specify the header cells for rows and columns, improving accessibility for screen readers.-->
+    <div 
+    role="tabpanel"
+    id="match-info-panel" 
+    aria-labelledby="match-info-tab"
+>
+    <p>
+        Details about the match, including date,
+        time, venue, and current score.
+    </p>
+</div>
+
+<div
+    role="tabpanel"
+    id="player-stats-panel"
+    aria-labelledby="player-stats-tab"
+    hidden
+>
+    <p>
+        Individual player statistics such as goals,
+        assists, and minutes played.
+    </p>
+</div>
     
 </body>
+
 </html>
